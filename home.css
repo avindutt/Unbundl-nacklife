@@ -20,7 +20,7 @@ body, ul {
     padding: 10px 0;
     position: fixed;
     width: 100%;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .left-items ul {
@@ -221,11 +221,142 @@ nav a {
 
 .product-container {
     display: flex;
+    width: 75%;
+    margin: auto;
+}
+
+.product-container img {
+    width: 560px;
+    height: 730px;
+    object-fit: cover;
+}
+
+.product-container h6 {
+    letter-spacing: 1.9px;
+    font-size: 14px;
+}
+
+.product-container h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
     width: 80%;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .product-container p {
-    width: 30vw;
-    
+    width: 28vw;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.product-container button {
+    border: none;
+    background-color: #face93;
+    padding: 13px 35px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 2.5px;
+}
+
+.product-container button:hover {
+    background-color: #000000;
+    color: #face93;
+}
+
+.product-details {
+    margin: auto;
+}
+
+.post-content {
+    position: relative;
+    left: 12.5vw;
+    top: 15vh;
+}
+
+.post-content h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+}
+
+.post-content p {
+    width: 55vw;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.post-content b {
+    font-size: 13px;
+}
+
+.cards-container {
+    position: relative;
+    top: 40vh;
+    margin: 0 auto;
+}
+
+.content-header {
+    text-align: center;
+    position: relative;
+    top: 40vh;
+}
+
+.cards-container img {
+    width: 400px;
+    height: 414px;
+    object-fit: cover;
+}
+
+.cards-container h5 {
+    width: 26vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem !important;
+    font-weight: 700;
+}
+
+.cards-container p {
+    width: 26vw;
+    text-align: justify;
+    line-height: 27px;
+    font-weight: 200;
+}
+
+.tags a {
+    text-decoration: underline;
+    color: #000000;
+    font-size: x-small;
+    margin-right: 12px;
+    font-weight: 500;
+}
+
+.new-tags {
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 2px solid #e0af70;
+}
+
+.new-tags:hover {
+    color: #face93;
+    text-decoration: none;
+}
+
+footer {
+    position: relative;
+    top: 50vh;
+}
+
+.footer-2 {
+    background-color: #000000;
+    color: #d0d0d0;
+    height: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+}
+
+.footer-1 {
+    background-color: #000000;
+    color: #fff;
 }

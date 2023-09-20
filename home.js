@@ -47,3 +47,17 @@ function updateCarousel() {
     const translateValue = currentIndex * -33.33; // increase the translate value by multiplying with index. on first click +33.33%, on second click +66.33% 
     carousel.style.transform = `translateX(${translateValue}%)`;
 }
+
+const navbar = document.querySelector('.transparent-navbar');
+
+// Function to add a class when scrolling down
+function addScrollClass() {
+    if (window.scrollY > 0) {
+        navbar.classList.add('scroll-down');
+    } else {
+        navbar.classList.remove('scroll-down');
+    }
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', addScrollClass);

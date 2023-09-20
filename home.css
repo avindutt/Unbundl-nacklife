@@ -13,6 +13,20 @@ body, ul {
     z-index: 2;
 }
 
+.review-btn {
+    position: fixed;
+    top: 50vh;
+    right: -73px;
+    z-index: 2;
+    transform: rotateZ(90deg);
+    padding: 11px 5px;
+    width: 12rem;
+    letter-spacing: 1px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-weight: 500;
+}
 
 .transparent-navbar {
     color: #fff;
@@ -34,7 +48,7 @@ body, ul {
 
 .left-items a {
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .logo {
@@ -349,7 +363,7 @@ footer {
 .footer-2 {
     background-color: #000000;
     color: #d0d0d0;
-    height: 22vh;
+    height: 27vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,4 +373,58 @@ footer {
 .footer-1 {
     background-color: #000000;
     color: #fff;
+    height: 40vh;
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+
+.footer-1 i:hover {
+    cursor: pointer;
+}
+
+.footer-links a{
+    color: #fff;
+    text-decoration: underline;
+    margin-right: 4px;
+    font-size: 13px;
+}
+
+.footer-links {
+    gap: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-links a:hover {
+    color: #d0d0d0;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-us input[type= "email"]{
+    padding: 5px 15px;
+    width: 28vw;
+    height: 8vh;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.contact-us button {
+    width: 28vw;
+    background-color: #face93;
+    font-size: 13px;
+    padding: 15px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.scroll-down {
+    background-color: white;
+    color: #000000;
+    position: fixed;
+    top: 0px;
+    transition: 0.3s all ease-in-out;
+}
+
+.scroll-down a {
+    color: black;
 }

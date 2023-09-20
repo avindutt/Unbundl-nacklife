@@ -49,13 +49,16 @@ function updateCarousel() {
 }
 
 const navbar = document.querySelector('.transparent-navbar');
+const bar = document.querySelector('.bar-container button');
 
 // Function to add a class when scrolling down
 function addScrollClass() {
     if (window.scrollY > 0) {
         navbar.classList.add('scroll-down');
+        bar.classList.add('bg-black');
     } else {
         navbar.classList.remove('scroll-down');
+        bar.classList.remove('bg-black');
     }
 }
 

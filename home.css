@@ -279,11 +279,17 @@ nav a {
     color: #face93;
 }
 
+.experts-img {
+    width: 560px;
+    height: 555px;
+}
+
 .product-details {
     margin: auto;
 }
 
 .post-content {
+    width: max-content;
     position: relative;
     left: 12.5vw;
     top: 15vh;
@@ -308,6 +314,8 @@ nav a {
     position: relative;
     top: 40vh;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .content-header {
@@ -371,6 +379,9 @@ footer {
 }
 
 .footer-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #000000;
     color: #fff;
     height: 40vh;
@@ -389,6 +400,8 @@ footer {
 }
 
 .footer-links {
+    height: 50%;
+    width: 25%;
     gap: 21px;
     display: flex;
     flex-wrap: wrap;
@@ -400,12 +413,23 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 9vw;
+}
+
 .contact-us input[type= "email"]{
     padding: 5px 15px;
     width: 28vw;
     height: 8vh;
     background-color: transparent;
     border: 1px solid white;
+    color: #fff;
+}
+
+.contact-us input[type= "email"]:focus {
+    outline: none;
 }
 
 .contact-us button {
@@ -425,6 +449,127 @@ footer {
     transition: 0.3s all ease-in-out;
 }
 
+.bg-black {
+    color: #000000 !important;
+}
+
+.bar-container button{
+    background-color: transparent; color: white; border: none;
+}
+
 .scroll-down a {
     color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .mySlides img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+        vertical-align: middle;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .bar-container {
+        display: block;
+    }
+
+    .slide { /* Display 1 slide at a time */
+        flex: 0 0 100%; 
+    }
+
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .product-container img {
+        width: 70vw;
+        height: 100vw;
+    }
+
+    .product-details p {
+        display: none;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards-container p {
+        width: 80%;
+        margin: 17 auto;
+    }
+
+    .cards-container h5 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .post-content h1 {
+        font-size: 5vw;
+    }
+
+    .footer-1 {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        height: 20vw;
+    }
+
+    .social-icons {
+        width: 30%;
+        display: flex;
+    }
+
+    .contact-us input[type= "email"] {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .bar-container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 901px) {
+    .mySlides img {
+        height: 70%;
+        width: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    nav a {
+        display: none;
+    }
+    .slide p {
+        margin-top: 20px;
+    }
+    .product-container img {
+        width: 44vw;
+    }
+    .product-details {
+        margin-right: 30px;
+    }
+    .cards-container img {
+        width: 80%;
+    }
 }
